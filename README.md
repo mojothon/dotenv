@@ -1,12 +1,32 @@
 # dotenv
 
-a mojo module to load environment variables from .env file.
+a mojo package to load environment variables from .env file.
 
 
-
-
-## 构建包
+## package build
 
 ```bash
 magic run mojo package  dotenv/ -o dotenv.mojopkg
 ```
+or 
+
+```bash
+make package
+```
+
+## test
+
+```bash
+magic run test 
+```
+
+or 
+
+```bash
+make test
+```
+
+## version
+
+version 0.1.0
+
