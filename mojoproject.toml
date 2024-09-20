@@ -1,7 +1,7 @@
 [project]
 authors = ["llango <724261350@qq.com>"]
 channels = ["conda-forge", "https://conda.modular.com/max"]
-description = "Add a short description here"
+description = "a mojo package to load environment variables from .env file."
 name = "dotenv"
 platforms = ["linux-64"]
 version = "0.1.0"
