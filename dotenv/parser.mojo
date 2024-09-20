@@ -1,6 +1,6 @@
 import os
 import pathlib
-from collections import Dict, List, list
+from collections import Dict, List
 
 
 fn load_dotenv() raises -> None:
