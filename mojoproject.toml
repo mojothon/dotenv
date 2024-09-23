@@ -1,13 +1,16 @@
 [project]
-authors = ["llango <724261350@qq.com>"]
-channels = ["conda-forge", "https://conda.modular.com/max"]
+authors = ["llango<724261350@qq.com>"]
+channels = ["https://repo.prefix.dev/mojo-force", "conda-forge", "https://conda.modular.com/max"]
 description = "a mojo package to load environment variables from .env file."
 name = "dotenv"
-platforms = ["linux-64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
+
 
 [tasks]
 test = "mojo test.mojo"
+build = "rattler-build build -r src -c https://repo.prefix.dev/mojo-force -c https://conda.modular.com/max -c conda-forge --skip-existing=all"
+publish = { cmd = "bash scripts/publish.sh", env = { PREFIX_API_KEY = "$PREFIX_API_KEY" } }
 
 [dependencies]
 max = ">=24.5.0,<25"
