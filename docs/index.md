@@ -6,7 +6,7 @@ a mojo package to load environment variables from .env file.
 ## package build
 
 ```bash
-pixi run mojo package  dotenv/ -o dotenv.mojopkg
+pixi run mojo package  src/dotenv/ -o dotenv.mojopkg
 ```
 or 
 
@@ -16,13 +16,11 @@ make package
 
 ## test
 
-first :
-
-```
-pixi add dotenv
+```bash
+pixi run test 
 ```
 
-then :
+or 
 
 ```bash
 make test
@@ -31,5 +29,4 @@ make test
 ## version
 
 version 0.1.2
-
 

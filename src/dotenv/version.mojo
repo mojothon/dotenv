@@ -1,1 +1,1 @@
-alias __version__ = "0.1.0"
+alias __version__ = "0.1.2"
